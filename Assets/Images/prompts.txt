@@ -1,0 +1,11 @@
+Generated with the built-in image_gen tool.
+
+rock
+Use case: stylized-concept. Asset type: Japanese rock-paper-scissors game UI sprite, one standalone hand, square image. Clean friendly 2D cartoon illustration, peach skin, thick smooth dark brown outline, simple warm cel shading. Right hand front palm-facing view, wrist pointing straight down, gesture upright, entire hand and short rounded wrist visible with generous transparent margin. Truly transparent alpha background, not a checkerboard drawing. No text, no border, no circle, no sleeve, no extra objects, no shadow outside hand. Anatomically correct five digits total. Closed fist for グー (rock): four fingers curled into palm and thumb folded across them, no extended fingers.
+
+scissors
+Use case: stylized-concept. Asset type: Japanese rock-paper-scissors game UI sprite, one standalone hand, square image. Clean friendly 2D cartoon illustration, peach skin, thick smooth dark brown outline, simple warm cel shading. Right hand front palm-facing view, wrist pointing straight down, gesture upright, entire hand and short rounded wrist visible with generous transparent margin. Truly transparent alpha background, not a checkerboard drawing. No text, no border, no circle, no sleeve, no extra objects, no shadow outside hand. Anatomically correct five digits total. V-sign for チョキ (scissors): only index and middle finger extended upward in a clear V, ring and little fingers folded into palm and held by thumb.
+
+paper
+Use case: stylized-concept. Asset type: Japanese rock-paper-scissors game UI sprite, one standalone hand, square image. Clean friendly 2D cartoon illustration, peach skin, thick smooth dark brown outline, simple warm cel shading. Right hand front palm-facing view, wrist pointing straight down, gesture upright, entire hand and short rounded wrist visible with generous transparent margin. Truly transparent alpha background, not a checkerboard drawing. No text, no border, no circle, no sleeve, no extra objects, no shadow outside hand. Anatomically correct five digits total. Open palm for パー (paper): all five digits visible, four fingers extended upward and slightly spread, thumb extended to the side.
+
