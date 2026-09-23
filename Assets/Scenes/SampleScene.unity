@@ -266,6 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 363473978}
   - component: {fileID: 363473977}
+  - component: {fileID: 363473979}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -300,6 +301,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &363473979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363473976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9817e8e202be6a1409e99436b82be96c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CPUHand
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +629,18 @@ MonoBehaviour:
           m_StringArgument: "\u30D1\u30FC"
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 363473979}
+        m_TargetAssemblyTypeName: CPUHand, Assembly-CSharp
+        m_MethodName: Onclick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &660144404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,6 +774,18 @@ MonoBehaviour:
           m_StringArgument: "\u30C1\u30E7\u30AD"
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 363473979}
+        m_TargetAssemblyTypeName: CPUHand, Assembly-CSharp
+        m_MethodName: Onclick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &812045769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -880,6 +917,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: "\u30B0\u30FC"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 363473979}
+        m_TargetAssemblyTypeName: CPUHand, Assembly-CSharp
+        m_MethodName: Onclick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1184147931
