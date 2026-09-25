@@ -71,7 +71,6 @@ public class GameManager : MonoBehaviour
         if (result == 0)
         {
             resultText.text = "引き分け";
-
         }
         else if (result == 2)
         {
