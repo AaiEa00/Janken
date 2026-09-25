@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] hands = new GameObject[handCount];
     [SerializeField] GameObject[] results = new GameObject[2];
     [SerializeField] Sprite[] handSprites = new Sprite[handCount];
+    [SerializeField] TextMeshProUGUI resultText;
 
     private void Awake()
     {
@@ -60,5 +61,24 @@ public class GameManager : MonoBehaviour
 
         playerText.text = player.ToString();
         cpuText.text = cpu.ToString();
+
+        ExecuteJanken(player, cpu);
+    }
+
+    void ExecuteJanken(Hands player, Hands cpu)
+    {
+        int result = ((int)player - (int)cpu + handCount) % handCount;
+        if (result == 0)
+        {
+            resultText.text = "引き分け";
+        }
+        else if (result == 2)
+        {
+            resultText.text = "あなたの勝ち";
+        }
+        else
+        {
+            resultText.text = "あなたの負け";
+        }
     }
 }
