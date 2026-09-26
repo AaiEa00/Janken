@@ -81,4 +81,16 @@ public class GameManager : MonoBehaviour
             resultText.text = "あなたの負け";
         }
     }
+
+    public void OnReplayClick()
+    {
+        foreach (var hand in hands)
+        {
+            hand.gameObject.SetActive(true);
+        }
+        foreach (var res in results)
+        {
+            res.SetActive(false);
+        }
+    }
 }
