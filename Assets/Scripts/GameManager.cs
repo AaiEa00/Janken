@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject[] results = new GameObject[2];
     [SerializeField] Sprite[] handSprites = new Sprite[handCount];
     [SerializeField] TextMeshProUGUI resultText;
+    [SerializeField] Button replayButton;
 
     private void Awake()
     {
@@ -27,6 +28,10 @@ public class GameManager : MonoBehaviour
         {
             res.SetActive(false);
         }
+
+        resultText.gameObject.SetActive(false);
+        resultText.text = "";
+        replayButton.gameObject.SetActive(false);
     }
 
     public void OnClick(string hand)
@@ -80,6 +85,8 @@ public class GameManager : MonoBehaviour
         {
             resultText.text = "あなたの負け";
         }
+        resultText.gameObject.SetActive(true);
+        replayButton.gameObject.SetActive(true);
     }
 
     public void OnReplayClick()
@@ -92,5 +99,7 @@ public class GameManager : MonoBehaviour
         {
             res.SetActive(false);
         }
+        resultText.gameObject.SetActive(false);
+        replayButton.gameObject.SetActive(false);
     }
 }

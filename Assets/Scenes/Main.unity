@@ -699,6 +699,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a02dca5e0aaeafd428ab75fa8424d5e8, type: 3}
   - {fileID: 21300000, guid: 72d2dc55823923d4cbfa25524bbebf4b, type: 3}
   resultText: {fileID: 1587163576}
+  replayButton: {fileID: 796843346}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,7 +1209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &796843345
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2163,7 +2164,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1587163575
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2203,7 +2204,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u3042\u306A\u305F\u306E\u52DD\u3061"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4addb9fe6aafbd845bb881c1d357cb6c, type: 2}
   m_sharedMaterial: {fileID: -2670392011243692519, guid: 4addb9fe6aafbd845bb881c1d357cb6c, type: 2}
