@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] Sprite[] handSprites = new Sprite[handCount];
     [SerializeField] TextMeshProUGUI resultText;
     [SerializeField] Button replayButton;
+    [SerializeField] GameObject navigation;
 
     private void Awake()
     {
@@ -87,6 +88,7 @@ public class GameManager : MonoBehaviour
         }
         resultText.gameObject.SetActive(true);
         replayButton.gameObject.SetActive(true);
+        navigation.SetActive(false);
     }
 
     public void OnReplayClick()
@@ -101,5 +103,6 @@ public class GameManager : MonoBehaviour
         }
         resultText.gameObject.SetActive(false);
         replayButton.gameObject.SetActive(false);
+        navigation.SetActive(true);
     }
 }
