@@ -5,5 +5,9 @@
 - [配布元](https://github.com/googlefonts/zen-marugothic)
 - [ライセンス全文](Assets/TextMesh%20Pro/Resources/Fonts%20&%20Materials/Zen_Maru_Gothic/OFL.txt)
 
+# 使用効果音
+## 効果音ラボ
+[配布元](https://soundeffect-lab.info/)
+
 # 使用画像
 グー・チョキ・パーの画像は、OpenAIの画像生成AIを使用して作成しました。
