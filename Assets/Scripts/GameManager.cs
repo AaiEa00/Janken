@@ -105,4 +105,9 @@ public class GameManager : MonoBehaviour
         replayButton.gameObject.SetActive(false);
         navigation.SetActive(true);
     }
+
+    public void OnExitClick()
+    {
+        Application.Quit();
+    }
 }
