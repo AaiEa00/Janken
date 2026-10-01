@@ -706,6 +706,7 @@ MonoBehaviour:
   winClip: {fileID: 8300000, guid: d8fc33a0d9806b94ab71916c9b5d8d8f, type: 3}
   replayClip: {fileID: 8300000, guid: 0fd812d881d169f47b336f33f43708fa, type: 3}
   chooseClip: {fileID: 8300000, guid: 40c9a944f5fe7eb4e86201372ce40e3f, type: 3}
+  soundButton: {fileID: 1595690587}
 --- !u!82 &363473980
 AudioSource:
   m_ObjectHideFlags: 0
@@ -860,7 +861,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u97F3"
+  m_text: ON
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4addb9fe6aafbd845bb881c1d357cb6c, type: 2}
   m_sharedMaterial: {fileID: -2670392011243692519, guid: 4addb9fe6aafbd845bb881c1d357cb6c, type: 2}
@@ -2903,7 +2904,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1595690588}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 363473979}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OnSoundClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1595690588
 MonoBehaviour:
   m_ObjectHideFlags: 0
