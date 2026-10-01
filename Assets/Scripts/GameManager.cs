@@ -22,6 +22,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI resultText;
     [SerializeField] Button replayButton;
     [SerializeField] GameObject navigation;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip winClip;
+    [SerializeField] AudioClip replayClip;
+    [SerializeField] AudioClip chooseClip;
 
     private void Awake()
     {
@@ -37,6 +41,8 @@ public class GameManager : MonoBehaviour
 
     public void OnClick(string hand)
     {
+        audioSource.PlayOneShot(chooseClip);
+
         playerHand = (Hands)System.Enum.Parse(typeof(Hands), hand);
 
         cpuHand = (Hands)Random.Range(0, handCount);
@@ -81,6 +87,7 @@ public class GameManager : MonoBehaviour
         else if (result == 2)
         {
             resultText.text = "あなたの勝ち";
+            audioSource.PlayOneShot(winClip);
         }
         else
         {
@@ -104,6 +111,7 @@ public class GameManager : MonoBehaviour
         resultText.gameObject.SetActive(false);
         replayButton.gameObject.SetActive(false);
         navigation.SetActive(true);
+        audioSource.PlayOneShot(replayClip);
     }
 
     public void OnExitClick()
