@@ -26,6 +26,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioClip winClip;
     [SerializeField] AudioClip replayClip;
     [SerializeField] AudioClip chooseClip;
+    [SerializeField] Button soundButton;
+
+    bool isMuted = false;
 
     private void Awake()
     {
@@ -37,6 +40,11 @@ public class GameManager : MonoBehaviour
         resultText.gameObject.SetActive(false);
         resultText.text = "";
         replayButton.gameObject.SetActive(false);
+
+        // 音声の初期設定
+        audioSource.mute = isMuted;
+        soundButton.image.color = Color.white;
+        soundButton.GetComponentInChildren<TextMeshProUGUI>().text = "ON";
     }
 
     public void OnClick(string hand)
@@ -112,6 +120,22 @@ public class GameManager : MonoBehaviour
         replayButton.gameObject.SetActive(false);
         navigation.SetActive(true);
         audioSource.PlayOneShot(replayClip);
+    }
+
+    public void OnSoundClick()
+    {
+        audioSource.mute = !audioSource.mute;
+        // 音声のON/OFFに応じてボタンの色とテキストを変更
+        if (audioSource.mute)
+        {
+            soundButton.image.color = Color.gray;
+            soundButton.GetComponentInChildren<TextMeshProUGUI>().text = "OFF";
+        }
+        else
+        {
+            soundButton.image.color = Color.white;
+            soundButton.GetComponentInChildren<TextMeshProUGUI>().text = "ON";
+        }
     }
 
     public void OnExitClick()
