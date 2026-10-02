@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] AudioClip replayClip;
     [SerializeField] AudioClip chooseClip;
     [SerializeField] Button soundButton;
-
+    [SerializeField] TextMeshProUGUI playerResultText;
     bool isMuted = false;
 
     private void Awake()
