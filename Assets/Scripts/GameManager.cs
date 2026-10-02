@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
         // 音声の初期設定
         audioSource.mute = isMuted;
         soundButton.image.color = Color.white;
-        soundButton.GetComponentInChildren<TextMeshProUGUI>().text = "ON";
+        soundButton.GetComponentInChildren<TextMeshProUGUI>().text = "音：ON";
     }
 
     public void OnClick(string hand)
@@ -140,12 +140,12 @@ public class GameManager : MonoBehaviour
         if (audioSource.mute)
         {
             soundButton.image.color = Color.gray;
-            soundButton.GetComponentInChildren<TextMeshProUGUI>().text = "OFF";
+            soundButton.GetComponentInChildren<TextMeshProUGUI>().text = "音：OFF";
         }
         else
         {
             soundButton.image.color = Color.white;
-            soundButton.GetComponentInChildren<TextMeshProUGUI>().text = "ON";
+            soundButton.GetComponentInChildren<TextMeshProUGUI>().text = "音：ON";
         }
     }
 
