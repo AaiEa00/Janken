@@ -30,6 +30,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI playerResultText;
     bool isMuted = false;
 
+    int playerWins = 0;
+    int playerLosses = 0;
+    int playerDraws = 0;
+
     private void Awake()
     {
         foreach (var res in results)
@@ -40,6 +44,7 @@ public class GameManager : MonoBehaviour
         resultText.gameObject.SetActive(false);
         resultText.text = "";
         replayButton.gameObject.SetActive(false);
+        playerResultText.text = "";
 
         // 音声の初期設定
         audioSource.mute = isMuted;
@@ -83,6 +88,8 @@ public class GameManager : MonoBehaviour
         cpuText.text = cpu.ToString();
 
         ExecuteJanken(player, cpu);
+
+        playerResultText.text = $"勝ち: {playerWins} 負け: {playerLosses} 引き分け: {playerDraws}";
     }
 
     void ExecuteJanken(Hands player, Hands cpu)
@@ -91,15 +98,18 @@ public class GameManager : MonoBehaviour
         if (result == 0)
         {
             resultText.text = "引き分け";
+            playerDraws++;
         }
         else if (result == 2)
         {
             resultText.text = "あなたの勝ち";
             audioSource.PlayOneShot(winClip);
+            playerWins++;
         }
         else
         {
             resultText.text = "あなたの負け";
+            playerLosses++;
         }
         resultText.gameObject.SetActive(true);
         replayButton.gameObject.SetActive(true);
@@ -120,6 +130,7 @@ public class GameManager : MonoBehaviour
         replayButton.gameObject.SetActive(false);
         navigation.SetActive(true);
         audioSource.PlayOneShot(replayClip);
+        playerResultText.text = "";
     }
 
     public void OnSoundClick()
