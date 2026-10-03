@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
 
         ExecuteJanken(player, cpu);
 
-        playerResultText.text = $"勝ち: {playerWins} 負け: {playerLosses} 引き分け: {playerDraws}";
+        playerResultText.text = $"{playerWins}勝 {playerLosses}敗 {playerDraws}引き分け";
     }
 
     void ExecuteJanken(Hands player, Hands cpu)
